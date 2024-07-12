@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sorting Visualization</h1>
+    <div id="array-container"></div>
+    <button class='button' onclick="openInputDialog()">Input Array</button>
+    <button class='button' onclick="generateRandomArray()">Generate Random Array</button>
+    <button class='button' onclick="sortArray('selection')">Selection Sort</button>
+    <button class='button' onclick="sortArray('insertion')">Insertion Sort</button>
+    <button class='button' onclick="sortArray('bubble')">Bubble Sort</button>
+    <div id="dialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close" onclick="closeDialog()">&times;</span>
+            <h2 style="text-align: center;">&nbsp;&nbsp;Input Array</h2>
+            <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas" style="text-align: center;width: 300px">
+            <br>
+            <button class='button-dig' onclick="renderInputArray()">Render</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
